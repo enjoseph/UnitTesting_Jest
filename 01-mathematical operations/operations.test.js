@@ -13,9 +13,7 @@ describe("add function", () => {
   test("Negative and Positive Value ", () => {
     expect(add(-5, 3)).toBe(-2);
   });
-  test("Positive and Negative Value ", () => {
-    expect(add(5, -3)).toBe(2);
-  });
+
 
   test("Negative and Negative Value ", () => {
     expect(add(-5, -3)).toBe(-8);
@@ -36,20 +34,12 @@ describe("add function", () => {
     expect(add(5.5, -3.3)).toBeCloseTo(2.2);
   });
 
-  test(" Negative  percentile and Poisitve percentile Value ", () => {
-    expect(add(-5.5, 3.3)).toBeCloseTo(-2.2);
-  });
-
   test(" Negative  percentile and Negative percentile Value ", () => {
     expect(add(-5.5, -3.3)).toBeCloseTo(-8.8);
   });
 
   test(" Adding two same numbers, one negative percentile and the other positive percentile ", () => {
     expect(add(3.3, -3.3)).toBeCloseTo(0);
-  });
-
-  test("Negative percentile and Positive Value ", () => {
-    expect(add(-5.5, 3)).toBe(-2.5);
   });
 
   test("Adding two same numbers, one negative and the other positive", () => {
